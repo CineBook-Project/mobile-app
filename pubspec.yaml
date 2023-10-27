@@ -43,7 +43,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_statusbarcolor_ns: ^0.5.0
-  flutter_svg: ^2.0.7
+  flutter_svg: ^2.0.8
   fluttertoast: ^8.2.2
   get_it: ^7.6.4
   hydrated_bloc: ^9.1.2
@@ -55,6 +55,11 @@ dependencies:
   path_provider: ^2.1.1
   rxdart: ^0.27.7
   shared_preferences: ^2.2.2
+  firebase_core: ^2.19.0
+  firebase_performance: ^0.9.3+1
+  firebase_crashlytics: ^3.4.1
+  firebase_auth: ^4.11.1
+  cloud_firestore: ^4.11.0
 
 dev_dependencies:
   flutter_test:
@@ -65,7 +70,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
   build_runner: ^2.4.6
   change_app_package_name: ^1.1.0
   json_serializable: ^6.7.1
@@ -84,28 +89,20 @@ flutter:
     - assets/
     - assets/images/
   fonts: 
-    - family: SoraBold
+    - family: Sora
       fonts: 
         - asset: assets/fonts/SoraBold.ttf
           weight: 700
-    - family: SoraSemibold
-      fonts:
         - asset: assets/fonts/SoraSemiBold.ttf
           weight: 600
-    - family: SoraRegular
-      fonts:
         - asset: assets/fonts/SoraRegular.ttf
           weight: 400
-    - family: SoraThin
-      fonts:
         - asset: assets/fonts/SoraThin.ttf
           weight: 100
-    - family: IBM Plex Sans Medium
+    - family: IBM Plex Sans
       fonts: 
         - asset: assets/fonts/IBMPlexSansMedium.ttf
           weight: 500
-    - family: IBM Plex Sans Regular
-      fonts:
         - asset: assets/fonts/IBMPlexSansRegular.ttf
           weight: 400
   # To add assets to your application, add an assets section, like this:

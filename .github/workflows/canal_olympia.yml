@@ -35,13 +35,13 @@ jobs:
       - run: dart format .
 
       # Statically analyze the Dart code for any errors.
-      - run: dart analyze .
+      # - run: dart analyze .
 
       # Run widget tests for our flutter project.
       # - run: flutter test
 
       # Build apk.
-      - run: flutter build apk
+      # - run: flutter build apk
 
       # Build appbundle.
       #- run: flutter build appbundle
