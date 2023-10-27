@@ -9,26 +9,16 @@ class CustomElevatedButton extends BaseButton {
     this.decoration,
     this.leftIcon,
     this.rightIcon,
-    EdgeInsets? margin,
-    VoidCallback? onTap,
-    ButtonStyle? buttonStyle,
-    Alignment? alignment,
-    TextStyle? buttonTextStyle,
-    bool? isDisabled,
-    double? height,
-    double? width,
-    required String text,
-  }) : super(
-          text: text,
-          onTap: onTap,
-          buttonStyle: buttonStyle,
-          isDisabled: isDisabled,
-          buttonTextStyle: buttonTextStyle,
-          height: height,
-          width: width,
-          alignment: alignment,
-          margin: margin,
-        );
+    super.margin,
+    super.onTap,
+    super.buttonStyle,
+    super.alignment,
+    super.buttonTextStyle,
+    super.isDisabled,
+    super.height,
+    super.width,
+    required super.text,
+  });
 
   final BoxDecoration? decoration;
 
