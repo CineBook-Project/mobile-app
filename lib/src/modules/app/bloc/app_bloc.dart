@@ -8,8 +8,7 @@ part 'app_state.dart';
 
 class AppBloc extends HydratedBloc<AppEvent, AppState> {
   AppBloc()
-      : super(AppState(AppThemes.appThemeData[AppTheme.lightTheme],
-            const Locale('fr', 'FR'))) {
+      : super(AppState(AppThemes().themeData(), const Locale('fr', 'FR'))) {
     on<ChangeTheme>(_changeTheme);
     on<ChangeLanguage>(_changeLanguage);
   }
@@ -18,7 +17,7 @@ class AppBloc extends HydratedBloc<AppEvent, AppState> {
     ChangeTheme event,
     Emitter<AppState> emit,
   ) {
-    emit(AppState(AppThemes.appThemeData[event.appTheme], state.locale));
+    emit(AppState(AppThemes().themeData(), state.locale));
   }
 
   void _changeLanguage(
@@ -34,7 +33,7 @@ class AppBloc extends HydratedBloc<AppEvent, AppState> {
       final ThemeData? theme;
       final Locale locale;
 
-      theme = AppThemes.appThemeData[AppTheme.lightTheme];
+      theme = AppThemes().themeData();
 
       if (json['locale'] as bool) {
         locale = const Locale('fr', 'FR');
@@ -51,7 +50,7 @@ class AppBloc extends HydratedBloc<AppEvent, AppState> {
   @override
   Map<String, bool>? toJson(AppState state) {
     return {
-      'light': state.themeData == AppThemes.appThemeData[AppTheme.lightTheme],
+      'light': state.themeData == AppThemes().themeData(),
       'locale': state.locale == const Locale('fr', 'FR')
     };
   }

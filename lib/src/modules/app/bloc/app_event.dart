@@ -8,7 +8,7 @@ abstract class AppEvent extends Equatable {
 }
 
 class ChangeTheme extends AppEvent {
-  final AppTheme appTheme;
+  final AppThemes appTheme;
   const ChangeTheme(this.appTheme);
 
   @override

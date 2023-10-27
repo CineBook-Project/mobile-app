@@ -1,4 +1,5 @@
 {
   "@@locale": "en",
-  "appname": "Position"
+  "appname": "Position",
+  "begin" : "Begin"
   }
