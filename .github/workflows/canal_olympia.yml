@@ -27,6 +27,16 @@ jobs:
         with:
           channel: "stable" # 'dev', 'alpha', default to: 'stable'
         #  flutter-version: "3.10.0" # you can also specify exact version of flutter
+      
+      - name: Get Firebase secrets
+        run: |
+          echo "$GOOGLE_SERVICES_JSON" > android/app/google-services.json
+          echo "$FIREBASE_OPTIONS" > lib/firebase_options.dart
+          echo "$GOOGLE_SERVICES_INFO_SPLIT" > ios/Runner/GoogleService-Info.plist
+        env:
+          GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
+          FIREBASE_OPTIONS: ${{ secrets.FIREBASE_OPTIONS }}
+          GOOGLE_SERVICES_INFO_SPLIT: ${{ secrets.GOOGLE_SERVICES_INFO_SPLIT }}
 
       # Get flutter dependencies.
       - run: flutter pub get
@@ -35,16 +45,13 @@ jobs:
       - run: dart format .
 
       # Statically analyze the Dart code for any errors.
-      # - run: dart analyze .
+      - run: dart analyze .
 
       # Run widget tests for our flutter project.
       # - run: flutter test
 
       # Build apk.
-      # - run: flutter build apk
-
-      # Build appbundle.
-      #- run: flutter build appbundle
+      - run: flutter build apk --release
 
       # Build Ios
-      # - run: flutter build ios --release --no-codesign
+      - run: flutter build ios --release --no-codesign
