@@ -1,6 +1,6 @@
-# Documentation d'Installation et de Contribution - Application Canal Olympia
+# Documentation d'Installation et de Contribution - Application CineBook
 
-Bienvenue dans la documentation d'installation et de contribution pour l'application Canal Olympia. Cette application Flutter utilise Firebase comme backend et offre une expérience fluide pour les utilisateurs. Cette documentation vous guidera à travers le processus d'installation, de configuration de Firebase et du déploiement de l'application sur les plateformes Android et iOS. De plus, elle explique le processus de contribution au projet.
+Bienvenue dans la documentation d'installation et de contribution pour l'application CineBook. Cette application Flutter utilise Firebase comme backend et offre une expérience fluide pour les utilisateurs. Cette documentation vous guidera à travers le processus d'installation, de configuration de Firebase et du déploiement de l'application sur les plateformes Android et iOS. De plus, elle explique le processus de contribution au projet.
 
 ## Installation
 
@@ -91,7 +91,7 @@ Bienvenue dans la documentation d'installation et de contribution pour l'applica
 
 ## Contribution au Projet
 
-Nous accueillons toutes les contributions au projet Canal Olympia. Voici comment vous pouvez contribuer :
+Nous accueillons toutes les contributions au projet CineBook. Voici comment vous pouvez contribuer :
 
 1. **Fork :** Forkez ce repository vers votre compte GitHub.
 
@@ -123,4 +123,4 @@ Notre équipe examinera votre contribution et la fusionnera si elle est conforme
 
 ---
 
-Merci de contribuer à l'application Canal Olympia! Si vous avez des questions ou des problèmes, n'hésitez pas à ouvrir un ticket dans la section des problèmes du repository.
+Merci de contribuer à l'application CineBook! Si vous avez des questions ou des problèmes, n'hésitez pas à ouvrir un ticket dans la section des problèmes du repository.
